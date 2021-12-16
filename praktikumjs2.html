@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>praktikum js</title>
+        <script>
+            function kursrp(usd){
+                let datausd = parseInt(usd);
+                document.getElementById("hasilnya").innerHTML = datausd * 14650;
+            }
+        </script>
+    </head>
+    <body>
+        <p><b>Kurs Indonesia (1 usd = Rp.14.650)</b></p>
+        <input type="text" name="usd" onchange="kursrp(this.value)">
+        <br>
+        <td id="hasilnya">Rp .... </td>
+    </body>
+</html>
